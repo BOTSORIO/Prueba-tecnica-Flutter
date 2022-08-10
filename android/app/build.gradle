@@ -69,3 +69,15 @@ flutter {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
+
+plugins {
+  id "org.sonarqube" version "3.4.0.2513"
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "BOTSORIO_Prueba-tecnica-Flutter"
+    property "sonar.organization", "botsorio"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
